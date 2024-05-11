@@ -1,0 +1,261 @@
+/* styles.css */
+
+/* Custom styles for header */
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 500px;
+    height: 450px;
+}
+
+body {
+    background-color: #EEE1C6;
+}
+
+/* Custom styles for content section */
+
+.content {
+    padding: 20px 0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-gallery .col-md-6 {
+    padding: 0 10px;
+}
+
+/* Custom styles for footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Modal styles */
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bootstrap Modal styles */
+.modal-content {
+    border: none;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -50px);
+}
+
+.modal.fade.show .modal-dialog {
+    transform: translate(0, 0);
+}
+
+@media (max-width: 576px) {
+    .image-gallery .col-md-6 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Custom CSS */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #D3BC8D;
+}
+
+footer {
+    background-color: #D3BC8D;
+}
+
+nav ul li a.active {
+    color: #D3BC8D; 
+    font-weight: bold; 
+}
+
+
+.interactive-image {
+    transition: transform 0.2s;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.interactive-image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.embed-table {
+    width: 100%;
+}
+
+.embed-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.google-map-embed {
+    height: 300px;
+}
+
+.airbnb-embed-frame {
+    width: 100%;
+    height: 300px;
+}
+
+
+.content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.content img:hover {
+    transform: scale(1.1); 
+}
+
+/* Custom CSS for layout adjustments */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact-info {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.contact-info i {
+    margin-right: 10px;
+    color: #000000; /* Blue color for icons */
+}
+/* Form styling */
+.contact-form {
+    max-width: 400px; /* Adjust as needed */
+}
+/* Override Bootstrap button styles to make buttons black */
+.btn-primary {
+    background-color: #000000; /* Black color for buttons */
+    border-color: #000000; /* Black color for button border */
+}
+.btn-primary:hover {
+    background-color: #333333; /* Darker shade of black on hover */
+    border-color: #333333; /* Darker shade of black on hover */
+}
+
+.testimonial {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 14px;
+}
+
+/* Carousel Control Arrows Position */
+.carousel-control-prev,
+.carousel-control-next {
+    top: auto;
+    bottom: -40px; /* Adjust this value to position the arrows as desired */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+}
+
+/* New CSS for embedded elements */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full height of viewport */
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.embed-container {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.embed-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Additional styles for the dreamboard */
+#dreams {
+    margin-top: 30px;
+}
+
+.dream {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.dream-content {
+    display: flex;
+    align-items: center;
+}
+
+.dream-content h3 {
+    margin-right: 10px;
+}
+
+.dream-content::before {
+    content: '*';
+    color: red;
+    margin-right: 5px;
+}
+
+
